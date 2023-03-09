@@ -1,0 +1,323 @@
+/*********************************************************************/
+/*  Web Warhammer 40K                                                */
+/*  CSS de Warhammer 40K                                             */
+/*  Autor: Daniel de Poorter Vázquez                                 */
+/*  versión 1.0                                                      */
+/*********************************************************************/
+
+/**************************  MAIN STYLING  ***************************/
+
+*{
+  margin: 0; 
+  padding: 0;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(119, 1, 1, 0.7), rgba(4,9,30,0.7)), url(./images/AquilaBlack.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+body{
+  background: #dfcfcff8;
+}
+
+nav img{
+  width: 125px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 20 px;
+  position: relative;
+}
+
+.nav-links ul li{
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #d4d4d4;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text_box{
+  width: 90%;
+  color: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*Put´s it at the center of div*/
+  text-align: center;
+}
+
+.text_box h1{
+  font-size: 62px; /*Check size further on*/
+}
+
+.text_box p{ /*Refers specifically to the p of the text_box, can be overwritten*/
+  margin: 10px 0 40px; /*10 px from top, 0 left and right and 40 from bottom*/
+  font-size: 20px;
+  color: #fff;
+}
+
+.hero_button{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #0a0a0a;
+  padding: 12px 12px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+/*Check to see if delete*/
+.hero_button:hover{
+  border: 2px solid #8b0000;
+  background: #080808;
+  transition: 1.4s;
+}
+
+.fa-times{
+  visibility:hidden;
+}
+
+.fa-bars{
+  visibility:hidden;
+}
+
+/************************** Button go to top *****************************/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(14, 14, 14); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*************************ImperiumMan************************************/
+
+.ImperiumMan{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1{
+  text-align: center;
+  font-size: 62px;
+  font-weight: 600;
+}
+
+p{
+  color:#080705;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*******************IMAGE IoM SECTION *************************************/
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/*************************FOOTER************************************/
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.fa {
+  box-sizing:content-box;
+  padding: 10px;
+  font-size: 40px;
+  width: 30px; 
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.fa-twitter {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.fa-youtube {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.fa-twitch {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+
+/************MEDIA QUERIES**************/
+
+@media(max-width: 720px){
+
+  /*Header part*/
+  .text_box h1{
+    font-size: 20px; /*Check size further on*/
+  }
+
+  .nav-links ul li{
+    display: block;
+  }
+
+  .nav-links{
+    position: fixed;
+    overflow: hidden;
+    background: #696969e0; 
+    height: 100vh; /*Complete height*/
+    width: 200px;
+    top: 0;
+    right: -200px; /*Esconde el menú*/
+    text-align: left;
+    z-index: 2;
+    transition: 1.5s;
+  }
+  
+  /*Botón cerrar, no se muestra*/
+
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul{
+    padding: 30px;
+  }
+
+  /*Course part*/
+  .row{
+    flex-direction: column;
+  }
+
+  .fa-times{
+    visibility:visible;
+  }
+  
+  .fa-bars{
+    visibility:visible;
+  }
+
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--Contains the meta information about the HTML page-->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factions</title>
+    <link rel="stylesheet" href="./index_factions.css">
+    <link rel="shortcut icon" href="./images/Aquila_NO_BACKGROUND.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">  </head>
+  </head>
+
+  <body>
+
+    <section class="header">
+
+      <nav>
+        <a href="index.html"><img src="./images/Aquila_NO_BACKGROUND.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hide_menu()"></i> <!--No funciona, no se muestra, parece roto, revisar-->
+            <ul>
+              <li><a href="./index.html#header">HOME</a></li>
+              <li><a href="./factions.html#ImperiumMan">IMPERIUM OF MAN</a></li>
+              <li><a href="./factions.html#chaos">CHAOS</a></li>
+              <li><a href="./factions.html#xenos">XENOS</a></li>
+              <li><a href="./Contact.html#contact_info">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="show_menu()"></i> <!--No funciona, no se muestra, parece roto, revisar-->
+      </nav>
+
+      <div class="text_box"> <!--OPTIONAL-->
+        <h1>FACTIONS OF <br>WARHAMMER 40K</h1>
+        <p>In the grim darkness of the 41st millennium, there is only war.</p>
+        <a href="./Contact.html#contact_info" class="hero_button">CLICK HERE TO ENLIST</a>
+      </div>
+
+    </section>
+
+    <!--INTRO TO WARHAMMER 40K MODIFICAR A GUSTO DEL CONSUMIDOR-->
+
+    <section id="ImperiumMan">
+
+      <div class="Imperium_Part">
+        <h1>
+        Imperium of Man
+        </h1>
+        <p>
+          The Imperium of Man is the galaxy-spanning interstellar empire which rules over the vast majority of the Human race in the 41st Millennium AD. The founder and immortal ruler of the 
+          Imperium is the <b>Emperor of Mankind</b>, the God-Emperor of a million worlds who is the most powerful Human psyker ever born. <br>
+          <br>Founding the Imperium over ten thousand standard years ago during the Great Crusade era of the late 30th Millennium AD, the Emperor has been physically imprisoned within the 
+          <b>Golden Throne</b> on Terra since He was horribly wounded and disfigured during the great galactic civil war with His wayward son Horus.<br>
+          <br>The Emperor rules the Imperium in name and His presence in the Warp allows interstellar travel through the maintenance of the psychic beacon known as the Astronomican. 
+          His ascended form in the Warp is also believed to keep the worst aspects of Chaos at bay. <br>
+          <br> As the Emperor can no longer communicate directly with His subjects, the day-to-day governance of the realm is carried out by the council of Imperial nobles known as the High 
+          Lords of Terra.<br>
+          <br>Today, the Imperium is a realm very different from the golden rule of prosperity, scientific wonder and freedom promised by the Emperor ten millennia ago. 
+          The Imperium in His absence has degenerated into a despotic, tyrannical regime defined by ignorance, fear and superstition. <br>
+        </p>
+      </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides1">
+          <img src="./images/IoM/SpaceMarine_3.jpg" style="width:100%">
+          <div class="text">Roboute Gulliman alongside Cypher and an Imperial Knight</div>
+        </div>
+      
+        <div class="mySlides1">
+          <img src="./images/IoM/Mechanicum_1.jpg" style="width:100%">
+          <div class="text">Mechanicum of Mars charging into the fray</div>
+        </div>
+      
+        <div class="mySlides1">
+          <img src="./images/IoM/Echlesiarchy_4.jpg" style="width:100%">
+          <div class="text">Sisters of Silence</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+      </div>
+
+    </section>
+
+    <section id="chaos">
+
+      <div class="Chaos_Part">
+        <h1>
+        Chaos
+        </h1>
+        <p>
+          Chaos, also known to its servants as the <b>Primordial Truth</b> or the <b>Primordial Annihilator</b>, and to the Imperium of Man as the Archenemy, is the universal and usually malign 
+          spiritual force embodied by the malevolent intelligent entities comprised of psychic energy that live in the Immaterium.<br>
+          <br>The entities who embody Chaos are mostly the beings of pure psychic energy called the Chaos Gods and their daemonic servants, but the term also encompasses those mortals who 
+          have thrown in their lot with Chaos.
+          <br>These range from simple peasants and/or manufactorum labourers who serve as Chaos Cultists, to Traitor Imperial Guardsmen, planetary militia, Imperial nobles, Planetary 
+          Governors, and even the mighty Chaos Space Marines and Traitor Titan Legions of the Dark Mechanicum.  <br>
+        </p>
+      </div>
+
+      <div class="slideshow-container">
+        
+        <div class="mySlides2">
+          <img src="./images/Chaos/ChaosMarines_1.jpg" style="width:100%">
+          <div class="text">Chaos Dreadnought in action</div>
+        </div>
+      
+        <div class="mySlides2">
+          <img src="./images/Chaos/ChaosMarines_3.jpg" style="width:100%">
+          <div class="text">Chaos Psyker Marine invoking the Warp</div>
+        </div>
+      
+        <div class="mySlides2">
+          <img src="./images/Chaos/ChaosKnights_5.jpg" style="width:100%">
+          <div class="text">Chaos Knight battling a loyalist Knight</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+      </div>
+
+    </section>
+    
+    <section id="xenos">
+
+      <div class="Xenos_Part">
+        <h1>
+          Xenos
+        </h1>
+        <p>
+          Xenos is a High Gothic term used by the people and adepta of the Imperium of Man that means "stranger" and "alien." It is often used by the 
+          Adeptus Terra to signify enemy aliens or off-world, non-Human forces.<br>
+          The main starfaring, intelligent xenos species in the Milky Way Galaxy are the Drukhari, Craftworld Aeldari, Necrons, Orks, T'au and Tyranids, though there are countless other 
+          intelligent alien species, most of them hostile, that Mankind has encountered over the long millennia of its expansion across the stars. </p>
+      </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides3">
+          <img src="./images/Xenos/Necron_3.jpg" style="width:100%">
+          <div class="text">Necron from a Crownworld readying itself to defend it </div>
+        </div>
+      
+        <div class="mySlides3">
+          <img src="./images/Xenos/Eldar_1.jpg" style="width:100%">
+          <div class="text">Eldars entering battle agains Chaos</div>
+        </div>
+      
+        <div class="mySlides3">
+          <img src="./images/Xenos/Tau_3.jpg" style="width:100%">
+          <div class="text">T´au mecha preparing to deliver the final blow</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+      </div>
+
+    </section>
+
+    <section class="footer">
+
+      <div class="icons">
+        <p>Follow us here:</p>
+          <a href="https://www.facebook.com/warhammer40000uk/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/warhammer" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/user/GamesWorkshopWNT" class="fa fa-youtube"></a>
+          <a href="https://www.twitch.tv/warhammer/" class="fa fa-twitch"></a>
+      </div>
+
+    </section>
+
+
+    <!-- Button to go upwards! -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Upwards!</button>
+
+    <!-- Script para que funcione el botón para subir arriba -->
+
+    <script>
+
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <!--Funciones de JavaScript para mostras y esconder menú-->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+      function show_menu(){
+        navLinks.style.right = "0";
+      }
+
+      function hide_menu(){
+        navLinks.style.right = "-200px";
+      }
+
+      
+    </script>
+    
+    <script type="text/javascript" src="./js/function.js"></script>
+
+  </body>
+
+</html>

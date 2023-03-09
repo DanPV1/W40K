@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--Contains the meta information about the HTML page-->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warhammer 40K</title>
+    <link rel="stylesheet" href="./index_css.css">
+    <link rel="shortcut icon" href="./images/Aquila_NO_BACKGROUND.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="./images/Aquila_NO_BACKGROUND.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hide_menu()"></i>
+          <ul>
+            <li><a href="index.html#header">HOME</a></li>
+            <li><a href="./factions.html#ImperiumMan">IMPERIUM OF MAN</a></li>
+            <li><a href="./factions.html#chaos">CHAOS</a></li>
+            <li><a href="./factions.html#xenos">XENOS</a></li>
+            <li><a href="./Contact.html#contact_info">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="show_menu()"></i>
+      </nav>
+
+      <div class="text_box"> <!--OPTIONAL-->
+        <h1>WARHAMMER 40K</h1>
+        <p>In the grim darkness of the 41st millennium, there is only war.</p>
+        <a href="./Contact.html#contact_info" class="hero_button">CLICK HERE TO ENLIST</a>
+      </div>
+    </section>
+
+    <!--INTRO TO WARHAMMER 40K MODIFICAR A GUSTO DEL CONSUMIDOR-->
+
+    <section class="factions">
+
+      <h1><a href="./factions.html">FACTIONS OF <br> WARHAMMER 40K</a></h1>
+      <p>The galaxy is filled with myriad races, all constantly at war. Each has their own cultures and different ways of
+        fighting. Learn more about them here.</p>
+
+      <div class="row">
+
+        <div class="factions_col">
+          <h3>Imperium of Man</h3>
+          <a href="./factions.html#ImperiumMan"><img src="./images/Space_Marine_VERT.png" alt=""></a>
+          <p>Will you join the mankind and its uncountable legions of both human and transhuman beings? </p>
+        </div>
+
+        <div class="factions_col">
+          <h3>Chaos</h3>
+          <a href="./factions.html#chaos"><img src="./images/Star_of_Chaos.webp" alt=""></a>
+          <p>Will you join the legions of Chaos, where all are both damned and blessed by the Chaos Gods? </p>
+        </div>
+
+        <div class="factions_col">
+          <h3>Xenos</h3>
+          <a href="./factions.html#xenos"><img src="./images/Xenos_PORTADA.jpg" alt=""></a>
+          <p>Will you join one of the various Xenos factions, each with its own agenda and objectives? </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!--NEWS SECTION-->
+
+    <section class="news">
+      <h1>News of the <br>Warhammer universe</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur et quidem incidunt? </p>
+
+      <div class="row">
+        <div class="news_col">
+          <img src="./images/necron-header.jpg" alt="">
+          <p>More necron tomb worlds awaken! </p>
+        </div>
+
+        <div class="news_col">
+          <p>The emperor presides on another great victory agains heretical forces</p>
+          <img src="./images/Emperor_Great_Crusade.webp" alt="">
+        </div>
+
+        <div class="news_col">
+          <img src="./images/aspiring-champion-header-1663118342750.jpg" alt="">
+          <p>Another bout of heretical histeria! More Chaos marines rush forward!</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Footer-->
+
+    <section class="footer">
+      <h2>About us</h2>
+      <p>Welcome to Warhammer 40,000, the thrilling hobby of tabletop wargaming! <br>The game is set in the grim darkness
+        of the far future, where mighty armies clash on countless war-torn worlds and Humanity stands alone, <br>beset on
+        all sides by the threats of the heretic, the mutant and the alien. <br><br>There is no mercy. <br><br>There is no
+        respite. <br><br>Prepare yourself for battle. </p>
+
+      <div class="icons">
+        <p><br>Follow us here:</p>
+        <a href="https://www.facebook.com/warhammer40000uk/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/warhammer" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/user/GamesWorkshopWNT" class="fa fa-youtube"></a>
+        <a href="https://www.twitch.tv/warhammer/" class="fa fa-twitch"></a>
+      </div>
+
+    </section>
+
+    <!-- Button to go upwards! -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Upwards!</button>
+
+    <!--Funciones de JavaScript para mostras y esconder menú-->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+      function show_menu() {
+        navLinks.style.right = "0";
+      }
+
+      function hide_menu() {
+        navLinks.style.right = "-200px";
+      }
+
+    </script>
+
+    <!-- Script para que funcione el botón para subir arriba -->
+
+    <script>
+
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+
+  </body>
+
+</html>
